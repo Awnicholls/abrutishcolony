@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Garamond Premier Pro Light Italic Display';
+    src: url('./my-font.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+header{
+    margin-left: 10px;
+}
+
+header h1{
+    margin-bottom: 0px;
+}
+header h2 {
+    margin-top: 0px;
+}
+body {
+    margin-left: 10px;
+    background: url('./background.jpg'); 
+    color: rgba(167,115,128,255);
+
+  }
+
+.author-name {
+    font-family: 'Garamond Premier Pro Light Italic Display';
+}
