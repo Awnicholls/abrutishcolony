@@ -1,27 +1,68 @@
 @font-face {
-    font-family: 'Garamond Premier Pro Light Italic Display';
-    src: url('./my-font.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-  }
-
-header{
-    margin-left: 10px;
+  font-family: "Garamond Premier Pro Light Italic Display";
+  src: url("./my-font.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
 }
 
-header h1{
-    margin-bottom: 0px;
+* {
+    box-sizing: border-box
+  }
+
+body {
+  margin-left: 10px;
+  background: url("./background1.jpg");
+  color: rgba(167, 115, 128, 255);
+  display: flex;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  margin-left: 10px;
+  flex: 1;
+}
+
+header .title {
+ float: left;
+  flex-direction: column;
+}
+header h1 {
+  margin-bottom: 0px;
 }
 header h2 {
-    margin-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-body {
-    margin-left: 10px;
-    background: url('./background.jpg'); 
-    color: rgba(167,115,128,255);
-
-  }
 
 .author-name {
-    font-family: 'Garamond Premier Pro Light Italic Display';
+  font-family: "Garamond Premier Pro Light Italic Display";
+  width: max-content;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  display: flex;
+  margin-top: 0;
+}
+header nav li {
+  list-style: none;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: rgba(167, 115, 128, 255);;
+  display: block;
+  padding: 0px 25px;
+  margin-top: 25.44px;
+  font-weight: 400;
+  transition: all ease-out 250ms;
+  font-size: 28px;
+}
+
+header nav li a:hover {
+  color: purple;
 }
