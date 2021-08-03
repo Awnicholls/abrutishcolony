@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Garamond Premier Pro Light Italic Display";
-  src: url("./my-font.woff") format("woff");
+  src: url(c07b76224cc183800bf9.woff) format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 
 body {
   margin-left: 10px;
-  background: url("./background.jpg");
+  background: url(76c1475f806e5a5e58c9.jpg);
   color: rgba(167, 115, 128, 255);
   display: flex;
 }
@@ -66,3 +66,4 @@ header nav li a {
 header nav li a:hover {
   color: purple;
 }
+
