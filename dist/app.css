@@ -67,3 +67,8 @@ header nav li a:hover {
   color: purple;
 }
 
+header nav li a.active {
+  color: purple; 
+  font-weight: 600;
+}
+
