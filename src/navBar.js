@@ -30,7 +30,7 @@ export default function createNav(){
     }
 
     // Set first list item as current
-    navList.children[0].children[0].className = "active";
+    navList.children[0].children[0].className += " active";
 
     return navList;
 };

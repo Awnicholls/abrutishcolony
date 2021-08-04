@@ -48,7 +48,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-black);
-  padding-top: 93px;
 }
 
 a,
@@ -66,32 +65,6 @@ button {
 
 
 
-
-header .author-name {
-  font-family: "Garamond Premier Pro Light Italic Display";
-  width: max-content;
-}
-
-header .container {
-  max-width: 80rem;
-  width: 100%;
-  height: auto;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-
-header .brand {
-  font-family: inherit;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: inherit;
-  border: none;
-  outline: none;
-  color: var(--color-purple-medium);
-  text-transform: capitalize;
-  text-rendering: optimizeLegibility;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -102,6 +75,36 @@ header {
   box-shadow: var(--shadow-small);
   transition: background .5s;
 }
+
+
+
+header .container {
+  max-width: 80rem;
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+header .brand {
+  display:flex;
+  flex-direction: column;
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: inherit;
+  border: none;
+  outline: none;
+  color: var(--color-purple-medium);
+  text-transform: capitalize;
+  text-rendering: optimizeLegibility;
+  margin-top: 10px;
+}
+
+header .author-name {
+  font-family: "Garamond Premier Pro Light Italic Display";
+  height: max-content;
+  }
+
 
 header .navbar {
   display: flex;
@@ -129,7 +132,7 @@ header .menu-item {
   border-bottom: 3px solid transparent;
   transition: all 0.35s ease-in-out;
 }
-header .menu::active {
+header .menu-item:active {
   border-bottom: 3px solid var(--color-purple-dark);
   outline: none;
 }
@@ -147,18 +150,33 @@ header .menu-link {
   transition: all 0.35s ease-in-out;
 }
 
-main .main-content {
-	max-width: 60rem;
+main {
+	max-width: 90vw;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	padding: 5rem 0;
+	padding-bottom: 2rem;
+  padding-top: 93px;
+
 }
+
 main section{
   	width: 100%;
 		height: auto;
 		margin: 0 auto;
-		padding: 1rem 0;
-	
+		padding-bottom: 1rem;
 }
- 
+
+/* main section#home {
+  display: flex;
+} */
+main section#home .cover-container {
+display:flex;
+  height: 90vh;
+  justify-content: center;
+}
+
+main section#home .book-cover {
+  object-fit: cover;
+  height: 100%;
+}

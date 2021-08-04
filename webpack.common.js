@@ -6,9 +6,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     app: './src/index.js',
-    // script: {
-    //   import: './src/script.js',
-    // }
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,10 +17,14 @@ module.exports = {
     {
       test: /\.css$/i,
       use: [MiniCssExtractPlugin.loader, "css-loader"],
+
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: 'asset/resource',
+      generator: {
+        filename: 'images/[hash][ext][query]'
+      }
     },     
     {
       test: /\.html/,
@@ -35,6 +36,9 @@ module.exports = {
     {
       test: /\.(woff|woff2|eot|ttf|otf)$/i,
       type: 'asset/resource',
+      generator: {
+        filename: 'fonts/[hash][ext][query]'
+      }
     },
   ]},
   output: {
