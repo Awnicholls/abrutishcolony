@@ -10,7 +10,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         title: 'A Brutish Colony | John Marshall',
-    }),
+        
+    }),  
+    
     new MiniCssExtractPlugin(),
   ],
   module :{rules: [

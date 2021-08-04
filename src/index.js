@@ -21,8 +21,9 @@ function createMainContent() {
   return mainContent;
 }
 
-
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createMainContent());

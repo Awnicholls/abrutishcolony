@@ -47,6 +47,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
   color: var(--color-black);
 }
 
@@ -150,21 +151,34 @@ header .menu-link {
   transition: all 0.35s ease-in-out;
 }
 
+header .buy{
+  background: #008CBA;
+  transition-duration: 0.4s;
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: #550055;
+}
+
+header .buy:hover{
+  background-color: red; 
+  color: white;
+}
 main {
-	max-width: 90vw;
+  max-width: 90vw;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	padding-bottom: 2rem;
-  padding-top: 93px;
 
 }
 
 main section{
   	width: 100%;
 		height: auto;
-		margin: 0 auto;
+		margin: 20px auto 0;
 		padding-bottom: 1rem;
+    display:flex;
+    padding-top: 105px;
 }
 
 /* main section#home {
@@ -174,9 +188,27 @@ main section#home .cover-container {
 display:flex;
   height: 90vh;
   justify-content: center;
+  padding-right: 15px;
 }
 
 main section#home .book-cover {
   object-fit: cover;
   height: 100%;
+}
+
+main section#home .book-summary {
+  padding: 10px;
+ 
+}
+
+main section#home h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+main section#home p {
+  line-height: 1.6em;
+  margin: 0 0 10px;
+  font-size: 14px;
+ color: #5c5c5c;
 }

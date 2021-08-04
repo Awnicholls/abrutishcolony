@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Awnicholls/abrutishcolony#readme",
   "devDependencies": {
     "css-loader": "^6.2.0",
+    "html-webpack-injector": "^1.1.4",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.1.0",
     "webpack": "^5.47.1",
