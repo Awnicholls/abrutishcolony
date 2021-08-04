@@ -4,7 +4,6 @@ import createHeader from "./header.js";
 import createHomeSection  from "./homeSection.js";
 import createAuthorSection  from "./authorSection.js";
 import createContactSection  from "./contactSection.js";
-import "./script.js";
 
 
 if (process.env.NODE_ENV !== "production") {

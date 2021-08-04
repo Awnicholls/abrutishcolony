@@ -100,9 +100,9 @@ header {
   width: 100%;
   height: auto;
   box-shadow: var(--shadow-small);
-  /* transition: all 0.35s ease-in-out; */
   transition: background .5s;
 }
+
 header .navbar {
   display: flex;
   flex-direction: row;
@@ -116,6 +116,7 @@ header .navbar {
 header.scrolled{
   background: white;
 }
+
 header .menu {
   display: flex;
   flex-direction: row;
