@@ -1,4 +1,6 @@
 import createNav from "./navBar.js";
+import Icon from './navicon.png';
+
 
 export default function createHeader() {
     const header = document.createElement("header");
@@ -8,6 +10,7 @@ export default function createHeader() {
     container.classList.add('container');
     const navBar = document.createElement("nav");
     navBar.classList.add('navbar');
+    navBar.setAttribute('id', 'navbar');
     const brand = document.createElement("div");
     brand.classList.add("brand");
   
@@ -20,8 +23,6 @@ export default function createHeader() {
     authorName.textContent = "John Marshall";
 
     function createScrollEvent(){
-      const headerBackground = header;
-    
       window.onscroll = function() {
     
       // pageYOffset or scrollY
@@ -32,6 +33,19 @@ export default function createHeader() {
       }
     }
     };
+   
+
+
+    const navLink = document.createElement("a");
+    navLink.setAttribute('href', 'javascript:void(0)');
+    navLink.className = 'icon-container';
+    navLink.setAttribute('id', 'navIcon');
+    const navIcon = new Image();
+    navIcon.classList.add('icon');
+    navIcon.src = Icon;
+    
+  
+
   
     header.appendChild(container);
     container.appendChild(navBar);
@@ -39,8 +53,14 @@ export default function createHeader() {
     navBar.appendChild(createNav());
     brand.appendChild(bookName);
     brand.appendChild(authorName);
+    navBar.appendChild(navLink);
+    navLink.appendChild(navIcon);
     createScrollEvent();
-  
+
+
+
     return header;
   }
+
+
   

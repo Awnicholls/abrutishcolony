@@ -118,7 +118,7 @@ header .navbar {
 }
 
 header.scrolled{
-  background: white;
+  background: rgba(255, 255, 255, 0.856);
 }
 
 header .menu {
@@ -163,6 +163,10 @@ header .buy:hover{
   background-color: red; 
   color: white;
 }
+
+/* header .i.icon{
+  background: url("./navicon.png");
+} */
 main {
   max-width: 90vw;
 	width: 100%;
@@ -211,4 +215,31 @@ main section#home p {
   margin: 0 0 10px;
   font-size: 14px;
  color: #5c5c5c;
+}
+
+@media (max-width: 600px) {
+  header{
+    height: 100px;
+  }
+  header .container {
+    padding: 0;
+   height: 100%
+  }
+  header .navbar {
+    height: 100%
+  }
+  header .author-name{
+    display: none;
+  }
+  main section {
+      flex-direction: column;
+      align-items: center;
+    }
+    main section#home .cover-container {
+    width: 80%;
+    height: auto;
+    }
+    main section#home .book-cover {
+      width: 100%;
+  }
 }
