@@ -121,7 +121,7 @@ header .menu {
   justify-content: end;
   align-items: end;
   gap: 2rem;
-  width: 70%;
+  flex: 1;
 }
 header .menu-item {
   padding: 1.25rem 0;
@@ -211,7 +211,7 @@ main section#home p {
   color: #5c5c5c;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   header {
     height: 100px;
   }
@@ -227,8 +227,8 @@ main section#home p {
   header .navbar a.icon-container {
     display: block;
     position: absolute;
-top: 35%;
-right: 5%;
+    top: 35%;
+    right: 5%;
     height: 20px;
   }
   header .navbar img.icon {
@@ -249,8 +249,8 @@ right: 5%;
     text-align: left;
     background: white;
     width: 100%;
+    justify-content: center;
   }
-
 
   header .brand {
     align-items: flex-start;
