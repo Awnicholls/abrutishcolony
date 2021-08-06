@@ -11,7 +11,10 @@ export default function createHomeSection() {
   bookCoverImage.src = bookCover;
   bookCoverImage.classList.add('book-cover');
   bookCoverContainer.appendChild(bookCoverImage);
-  bookCoverImage.setAttribute('alt', 'The book cover, a painting of a woman')
+  bookCoverImage.setAttribute('alt', 'The book cover, a painting of a woman');
+  bookCoverImage.setAttribute('height', '1124');
+  bookCoverImage.setAttribute('width', '750');
+  
 
   const bookSummary = document.createElement('div');
   bookSummary.classList.add('book-summary');

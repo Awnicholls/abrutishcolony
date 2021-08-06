@@ -3,6 +3,7 @@
   src: url("./my-font.woff") format("woff");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -197,6 +198,7 @@ main section#home .cover-container {
 main section#home .book-cover {
   object-fit: cover;
   height: 100%;
+  width: auto;
 }
 
 main section#home .book-summary {

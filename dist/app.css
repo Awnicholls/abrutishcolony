@@ -3,6 +3,7 @@
   src: url(fonts/c07b76224cc183800bf9.woff) format("woff");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -162,6 +163,7 @@ header .buy:hover {
 header .icon-container {
   font-size: 0px;
 }
+
 header img.icon {
   display: none;
 }
@@ -196,6 +198,8 @@ main section#home .cover-container {
 main section#home .book-cover {
   object-fit: cover;
   height: 100%;
+  width: auto;
+  aspect-ratio: attr(width) / attr(height);
 }
 
 main section#home .book-summary {
