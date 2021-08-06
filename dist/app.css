@@ -159,6 +159,9 @@ header .buy:hover {
   color: white;
 }
 
+header .icon-container {
+  font-size: 0px;
+}
 header img.icon {
   display: none;
 }

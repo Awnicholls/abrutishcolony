@@ -1,26 +1,26 @@
-import createNav from "./navBar.js";
+import createNav from './navBar.js';
 import Icon from './navicon.png';
 
 
 export default function createHeader() {
-    const header = document.createElement("header");
-    // header.setAttribute("id", "header");
+    const header = document.createElement('header');
+    // header.setAttribute('id', 'header');
 
-    const container = document.createElement("div");
+    const container = document.createElement('div');
     container.classList.add('container');
-    const navBar = document.createElement("nav");
+    const navBar = document.createElement('nav');
     navBar.classList.add('navbar');
     navBar.setAttribute('id', 'navbar');
-    const brand = document.createElement("div");
-    brand.classList.add("brand");
+    const brand = document.createElement('div');
+    brand.classList.add('brand');
   
-    const bookName = document.createElement("h1");
-    bookName.classList.add("book-name");
-    bookName.textContent = "A Brutish Colony";
+    const bookName = document.createElement('h1');
+    bookName.classList.add('book-name');
+    bookName.textContent = 'A Brutish Colony';
   
-    const authorName = document.createElement("h2");
-    authorName.classList.add("author-name");
-    authorName.textContent = "John Marshall";
+    const authorName = document.createElement('h2');
+    authorName.classList.add('author-name');
+    authorName.textContent = 'John Marshall';
 
     function createScrollEvent(){
       window.onscroll = function() {
@@ -36,13 +36,15 @@ export default function createHeader() {
    
 
 
-    const navLink = document.createElement("a");
+    const navLink = document.createElement('a');
+    navLink.innerHTML = 'Mobile navigation button';
     navLink.setAttribute('href', 'javascript:void(0)');
     navLink.className = 'icon-container';
     navLink.setAttribute('id', 'navIcon');
     const navIcon = new Image();
     navIcon.classList.add('icon');
     navIcon.src = Icon;
+    navIcon.setAttribute('alt', '');
     
   
 

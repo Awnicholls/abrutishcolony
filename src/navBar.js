@@ -12,7 +12,7 @@ export default function createNav(){
     ];
 
     // A few variables for use later
-    var navList = document.createElement("ul"), 
+    var navList = document.createElement('ul'), 
         navItem, navLink;
 
     navList.classList.add('menu');
@@ -21,8 +21,8 @@ export default function createNav(){
     // Cycle over each nav item
     for (var i = 0; i < navItems.length; i++) {
         // Create a fresh list item, and anchor
-        navItem = document.createElement("li");
-        navLink = document.createElement("a");
+        navItem = document.createElement('li');
+        navLink = document.createElement('a');
 
         // Set properties on anchor
         navLink.href = navItems[i].href;
@@ -35,8 +35,8 @@ export default function createNav(){
     }
 
     // Set first list item as current
-    navList.children[0].children[0].className += " active";
-    navList.children[3].children[0].className += " buy";
+    navList.children[0].children[0].className += ' active';
+    navList.children[3].children[0].className += ' buy';
    
 
     

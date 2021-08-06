@@ -10,10 +10,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: './src/index.html',
         title: 'A Brutish Colony | John Marshall',
         favicon: './src/favicon.ico',
         lang: 'en',
-
     }),  
   
     new MiniCssExtractPlugin(),
@@ -31,13 +31,13 @@ module.exports = {
         filename: 'images/[hash][ext][query]'
       }
     },     
-    {
-      test: /\.html/,
-      type: 'asset/resource',
-      generator: {
-        filename: 'static/[hash][ext][query]'
-      }
-    },
+    // {
+    //   test: /\.html/,
+    //   type: 'asset/resource',
+    //   generator: {
+    //     filename: 'static/[hash][ext][query]'
+    //   }
+    // },
     {
       test: /\.(woff|woff2|eot|ttf|otf)$/i,
       type: 'asset/resource',
