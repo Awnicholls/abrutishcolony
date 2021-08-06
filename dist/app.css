@@ -47,7 +47,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--color-black);
 }
 
@@ -63,9 +63,6 @@ button {
   text-decoration: none;
 }
 
-
-
-
 header {
   position: fixed;
   top: 0;
@@ -74,10 +71,8 @@ header {
   width: 100%;
   height: auto;
   box-shadow: var(--shadow-small);
-  transition: background .5s;
+  transition: background 0.5s;
 }
-
-
 
 header .container {
   max-width: 80rem;
@@ -87,7 +82,7 @@ header .container {
   margin: 0 auto;
 }
 header .brand {
-  display:flex;
+  display: flex;
   flex-direction: column;
   font-family: inherit;
   font-size: 1.3rem;
@@ -104,8 +99,7 @@ header .brand {
 header .author-name {
   font-family: "Garamond Premier Pro Light Italic Display";
   height: max-content;
-  }
-
+}
 
 header .navbar {
   display: flex;
@@ -117,16 +111,17 @@ header .navbar {
   margin: 0 auto;
 }
 
-header.scrolled{
+header.scrolled {
   background: rgba(255, 255, 255, 0.856);
 }
 
 header .menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   gap: 2rem;
+  flex: 1;
 }
 header .menu-item {
   padding: 1.25rem 0;
@@ -151,45 +146,45 @@ header .menu-link {
   transition: all 0.35s ease-in-out;
 }
 
-header .buy{
-  background: #008CBA;
+header .buy {
+  background: #70dbff;
   transition-duration: 0.4s;
   padding: 10px 15px;
   border: 1px solid white;
   color: #550055;
 }
 
-header .buy:hover{
-  background-color: red; 
+header .buy:hover {
+  background-color: red;
   color: white;
 }
 
-/* header .i.icon{
-  background: url("./navicon.png");
-} */
-main {
-  max-width: 90vw;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	padding-bottom: 2rem;
-
+header img.icon {
+  display: none;
 }
 
-main section{
-  	width: 100%;
-		height: auto;
-		margin: 20px auto 0;
-		padding-bottom: 1rem;
-    display:flex;
-    padding-top: 105px;
+main {
+  max-width: 90vw;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+main section {
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+  padding-bottom: 1rem;
+  display: flex;
+  padding-top: 105px;
 }
 
 /* main section#home {
   display: flex;
 } */
 main section#home .cover-container {
-display:flex;
+  display: flex;
   height: 90vh;
   justify-content: center;
   padding-right: 15px;
@@ -202,7 +197,6 @@ main section#home .book-cover {
 
 main section#home .book-summary {
   padding: 10px;
- 
 }
 
 main section#home h1 {
@@ -214,32 +208,68 @@ main section#home p {
   line-height: 1.6em;
   margin: 0 0 10px;
   font-size: 14px;
- color: #5c5c5c;
+  color: #5c5c5c;
 }
 
-@media (max-width: 600px) {
-  header{
+@media (max-width: 800px) {
+  header {
     height: 100px;
   }
   header .container {
     padding: 0;
-   height: 100%
+    height: 100%;
   }
-  header .navbar {
-    height: 100%
-  }
-  header .author-name{
+
+  header .navbar > .menu {
     display: none;
   }
+
+  header .navbar a.icon-container {
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    height: 20px;
+  }
+  header .navbar img.icon {
+    display: block;
+    height: 100%;
+  }
+  header .navbar {
+    height: 100%;
+  }
+
+  header .navbar.responsive {
+    position: relative;
+    flex-direction: column;
+  }
+
+  header .navbar.responsive .menu {
+    display: flex;
+    text-align: left;
+    background: white;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .brand {
+    align-items: flex-start;
+    height: 90%;
+    flex: 1;
+    padding-left: 10px;
+    width: 100%;
+  }
+
   main section {
-      flex-direction: column;
-      align-items: center;
-    }
-    main section#home .cover-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section#home .cover-container {
     width: 80%;
     height: auto;
-    }
-    main section#home .book-cover {
-      width: 100%;
+  }
+  main section#home .book-cover {
+    width: 100%;
   }
 }
+

@@ -6,13 +6,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     app: './src/index.js',
+ 
   },
   plugins: [
     new HtmlWebpackPlugin({
         title: 'A Brutish Colony | John Marshall',
-        
+        favicon: './src/favicon.ico',
+        lang: 'en',
+
     }),  
-    
+  
     new MiniCssExtractPlugin(),
   ],
   module :{rules: [
