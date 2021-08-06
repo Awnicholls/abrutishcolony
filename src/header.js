@@ -45,8 +45,8 @@ export default function createHeader() {
     navIcon.classList.add('icon');
     navIcon.src = Icon;
     navIcon.setAttribute('alt', '');
-    navIcon.setAttribute('width', '20');
-    navIcon.setAttribute('height', '26');
+    navIcon.setAttribute('height', '20');
+    navIcon.setAttribute('width', '26.6');
     
     
   
