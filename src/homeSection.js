@@ -1,4 +1,4 @@
-import bookCover from './book.jpg';
+import bookCover from './book.webp';
 
 export default function createHomeSection() {
   const home = document.createElement('section');
