@@ -2,6 +2,11 @@ export default function createContactSection() {
   const contact = document.createElement('section');
   contact.setAttribute('id', 'contact');
 
+  const contactHeader = document.createElement('div');
+  contactHeader.classList.add('contact-header');
+
+  const contactTitle = document.createElement('h1');
+  contactTitle.textContent = 'Contact: ';
 
   const formContainer = document.createElement('form');
   formContainer.setAttribute('name', 'contact');
@@ -41,8 +46,9 @@ export default function createContactSection() {
   submitButton.setAttribute('type', 'submit');
   submitButton.textContent = 'Submit';
   
-  
+  contact.appendChild(contactHeader)
   contact.appendChild(formContainer);
+  contactHeader.appendChild(contactTitle);
   formContainer.appendChild(formInput);
   formContainer.appendChild(pName);
   formContainer.appendChild(pEmail);
