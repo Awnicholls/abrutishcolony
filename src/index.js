@@ -4,6 +4,7 @@ import createHeader from './header.js';
 import createHomeSection  from './homeSection.js';
 import createAuthorSection  from './authorSection.js';
 import createContactSection  from './contactSection.js';
+import createFooter from './footer.js';
 
 
 
@@ -24,6 +25,7 @@ function createMainContent() {
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createMainContent());
+document.body.appendChild(createFooter());
 
 const navIcon = document.getElementById('navIcon');
 navIcon.addEventListener('click', navIconClick);
