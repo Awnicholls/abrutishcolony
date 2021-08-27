@@ -11,7 +11,6 @@ export default function createNav(){
         
     ];
 
-    // A few variables for use later
     var navList = document.createElement('ul'), 
         navItem, navLink;
 
@@ -34,7 +33,6 @@ export default function createNav(){
         navList.appendChild(navItem);
     }
 
-    // Set first list item as current
  
     navList.children[3].children[0].className += ' buy';
    

@@ -22,35 +22,43 @@ export default function createAuthorSection() {
   const authorName = document.createElement("h1");
   authorName.textContent = "About the Author: ";
   const authorSummaryBody = document.createElement("h2");
-  const authorSummaryPara = document.createElement("p");
+  const authorSummaryPara1 = document.createElement("p");
+  const authorSummaryPara2 = document.createElement("p");
+  const authorSummaryPara3 = document.createElement("p");
 
-  authorSummaryPara.textContent =
-    "John Marshall has been Her Britannic Majesty’s Ambassador to the Grand Duchy of Luxembourg since presenting his credentials to HRH Grand Duke Henri on 14 April 2016. He was previously British Ambassador to Senegal and non-resident Ambassador to Cabo Verde and Guinea-Bissau from May 2011 to July 2015.\n\
-  John Marshall joined the Foreign and Commonwealth Office in 1988. He has also previously served in Tokyo, Kuala Lumpur and Addis Ababa.";
+  authorSummaryPara1.textContent =
+    "John Marshall has been woking for the foreign office since 1988. During this time he has worked in Japan, Malaysia, Ethiopia, Senegal and Luxembourg.";
+  authorSummaryPara2.textContent =
+    "  His most recent roles include being the British Ambassador to Senegal and non-resident Ambassador to Cabo Verde and Guinea-Bissau from May 2011 to July 2015, followed by being the British Ambassador to Luxembourg till 2020. ";
+  authorSummaryPara3.textContent =
+    "Currently he can be found in Belgium, often going on runs or exploring the local areas, seeking history, culture and just adventure! He can be found documenting these journeys on his twitter, found here:";
 
-  const twitterIconWrapper = document.createElement('a');
-  twitterIconWrapper.innerHTML = 'Twitter link';
+  const twitterIconWrapper = document.createElement("a");
+  twitterIconWrapper.innerHTML = "Twitter link";
   twitterIconWrapper.setAttribute(
     "href",
     "https://twitter.com/hmajohnmarshall"
   );
-  twitterIconWrapper.className = 'twitter-container';
-
+  twitterIconWrapper.className = "twitter-container";
 
   const twitIcon = new Image();
-  twitIcon.classList.add('twitIcon');
+  twitIcon.classList.add("twitIcon");
   twitIcon.src = twitter;
-  twitIcon.setAttribute('alt', 'twitter icon');
-  twitIcon.setAttribute('width', '50');
-  twitIcon.setAttribute('height', '50');
+  twitIcon.setAttribute("alt", "twitter icon");
+  twitIcon.setAttribute("width", "50");
+  twitIcon.setAttribute("height", "50");
 
-twitterIconWrapper.appendChild(twitIcon);
+  twitterIconWrapper.appendChild(twitIcon);
 
   author.appendChild(authorSummary);
   author.appendChild(authorPhotoContainer);
   authorSummary.appendChild(authorName);
   authorSummary.appendChild(authorSummaryBody);
-  authorSummaryBody.appendChild(authorSummaryPara);
+  authorSummaryBody.appendChild(authorSummaryPara1);
+  authorSummaryBody.appendChild(authorSummaryPara2);
+
+  authorSummaryBody.appendChild(authorSummaryPara3);
+
   authorSummary.appendChild(twitterIconWrapper);
 
   return author;
