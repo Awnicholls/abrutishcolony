@@ -11,7 +11,7 @@ export default function createHomeSection() {
   bookCoverImage.src = bookCover;
   bookCoverImage.classList.add('book-cover');
   bookCoverContainer.appendChild(bookCoverImage);
-  bookCoverImage.setAttribute('alt', 'The book cover, a painting of a woman');
+  bookCoverImage.setAttribute('alt', 'A Brutish Colony cover, a painting of a woman');
   bookCoverImage.setAttribute('height', '1124');
   bookCoverImage.setAttribute('width', '750');
   
@@ -20,7 +20,7 @@ export default function createHomeSection() {
   bookSummary.classList.add('book-summary');
 
   const bookSummaryTitle = document.createElement('h1');
-  bookSummaryTitle.textContent = 'About the Book:';
+  bookSummaryTitle.textContent = 'A Brutish Colony:';
 
   const bookSummaryBody = document.createElement('h2');
   const bookSummaryPara1 = document.createElement('p');
