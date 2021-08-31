@@ -1,7 +1,7 @@
-import troubadorLogo from './troubador.png'
-import waterstonesLogo from './waterstones.png'
-import amazonLogo from './amazon.png'
-import bookdepositoryLogo from './bookdepository.png'
+import troubadorLogo from "./troubador.png";
+import waterstonesLogo from "./waterstones.png";
+import amazonLogo from "./amazon.png";
+import bookdepositoryLogo from "./bookdepository.png";
 
 export default function createBuySection() {
   const buy = document.createElement("section");
@@ -22,25 +22,25 @@ export default function createBuySection() {
       href: "https://www.troubador.co.uk/bookshop/history-politics-society/a-brutish-colony/",
       src: troubadorLogo,
       alt: "Troubador Logo",
-      class: "troubador"
+      class: "troubador",
     },
     {
       href: "https://www.bookdepository.com/book/9781800464100",
       src: bookdepositoryLogo,
       alt: "Bookdepository Logo",
-      class: "bookdepository"
+      class: "bookdepository",
     },
     {
       href: "https://www.amazon.co.uk/dp/180046410X/ref=cm_sw_r_tw_dp_P200YR4V9GEAWZ28EQK5 ",
       src: amazonLogo,
       alt: "Amazon Logo",
-      class: "amazon"
+      class: "amazon",
     },
     {
       href: "https://www.waterstones.com/book/a-brutish-colony/john-marshall/9781800464100",
       src: waterstonesLogo,
       alt: "Waterstones Logo",
-      class: "waterstones"
+      class: "waterstones",
     },
   ];
 
@@ -64,8 +64,8 @@ export default function createBuySection() {
     buyLogo.alt = buyItems[i].alt;
     buyItem.classList.add("buy-item");
     buyLink.classList.add("buy-link");
-    buyLogo.classList.add("buy-logo")
-    buyLogo.classList.add(buyItems[i].class)
+    buyLogo.classList.add("buy-logo");
+    buyLogo.classList.add(buyItems[i].class);
 
     // Add anchor to list item, and list item to list
     buyItem.appendChild(buyLink);

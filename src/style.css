@@ -284,33 +284,34 @@ main section#buy {
   flex-direction: row;
   justify-content: center;
 }
-main section#buy .buy-header{
-      text-align: center;
-      padding-bottom: 15px;
-      margin-bottom: 10px;
-      font-weight: 700;
-    
-      color: var(--color-grey-light);
-  }
+main section#buy .buy-header {
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  font-weight: 700;
 
-main section#buy .buy-item{
-  display: inline; 
-margin: 20px; }
-
-main section#buy .buy-logo{
-/* width: 190px; */
-height: 50px;
+  color: var(--color-grey-light);
 }
 
-main section#buy .amazon{
+main section#buy .buy-item {
+  display: inline;
+  margin: 20px;
+}
+
+main section#buy .buy-logo {
+  /* width: 190px; */
+  height: 50px;
+}
+
+main section#buy .amazon {
   /* width: 190px; */
   height: 30px;
-  }
+}
 
-main section#buy .waterstones{
+main section#buy .waterstones {
   vertical-align: super;
-    height: 30px;
-  }
+  height: 30px;
+}
 
 /** contact **/
 
@@ -476,22 +477,19 @@ footer a {
     height: auto;
   }
 
-  main section#buy .buy-list{
-text-align: center;
+  main section#buy .buy-list {
+    text-align: center;
+  }
 
- }
-
- main section#buy .buy-logo{
-  padding-bottom: 15px;
-
- }
- main section#buy .amazon{
-  /* width: 190px; */
-  height: 40px;
+  main section#buy .buy-logo {
+    padding-bottom: 15px;
+  }
+  main section#buy .amazon {
+    /* width: 190px; */
+    height: 40px;
   }
   main section#contact p {
     width: 100%;
-
   }
 
   main section#contact {

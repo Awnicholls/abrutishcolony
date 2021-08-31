@@ -1,42 +1,39 @@
+export default function createNav() {
+  // All items we'd like to add
+  const navItems = [
+    { href: "#home", text: "Home" },
+    { href: "#author", text: "Author" },
+    { href: "#contact", text: "Contact" },
+    {
+      href: "https://www.troubador.co.uk/bookshop/history-politics-society/a-brutish-colony/",
+      text: "BUY",
+    },
+  ];
 
+  var navList = document.createElement("ul"),
+    navItem,
+    navLink;
 
-export default function createNav(){
+  navList.classList.add("menu");
+  navList.setAttribute("id", "menu");
 
-    // All items we'd like to add
-    const navItems = [
-        {href: '#home', text: 'Home'},
-        {href: '#author', text: 'Author'},
-        {href: '#contact', text: 'Contact'},
-        {href: 'https:\/\/www.troubador.co.uk\/bookshop\/history-politics-society\/a-brutish-colony\/', text: 'BUY'},
-        
-    ];
+  // Cycle over each nav item
+  for (var i = 0; i < navItems.length; i++) {
+    // Create a fresh list item, and anchor
+    navItem = document.createElement("li");
+    navLink = document.createElement("a");
 
-    var navList = document.createElement('ul'), 
-        navItem, navLink;
+    // Set properties on anchor
+    navLink.href = navItems[i].href;
+    navLink.innerHTML = navItems[i].text;
+    navItem.classList.add("menu-item");
+    navLink.classList.add("menu-link");
+    // Add anchor to list item, and list item to list
+    navItem.appendChild(navLink);
+    navList.appendChild(navItem);
+  }
 
-    navList.classList.add('menu');
-    navList.setAttribute('id', 'menu');
+  navList.children[3].children[0].className += " buy";
 
-    // Cycle over each nav item
-    for (var i = 0; i < navItems.length; i++) {
-        // Create a fresh list item, and anchor
-        navItem = document.createElement('li');
-        navLink = document.createElement('a');
-
-        // Set properties on anchor
-        navLink.href = navItems[i].href;
-        navLink.innerHTML = navItems[i].text;
-        navItem.classList.add('menu-item');
-        navLink.classList.add('menu-link');
-        // Add anchor to list item, and list item to list
-        navItem.appendChild(navLink);
-        navList.appendChild(navItem);
-    }
-
- 
-    navList.children[3].children[0].className += ' buy';
-   
-
-    
-    return navList;
-};
+  return navList;
+}
